@@ -1,0 +1,28 @@
+{
+  "name": "alchemy/pipeline-component",
+  "description": "Pipeline component",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alchemy",
+      "email": "info@alchemy.fr"
+    }
+  ],
+  "require": {
+    "alchemy/resource-component": "dev-feature/resource-metadata"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alchemy\\Pipeline\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  }
+}
