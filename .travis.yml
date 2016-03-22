@@ -8,9 +8,6 @@ php:
   - 7.0
   - hhvm
 
-env:
-  PREFER_LOWEST=""
-
 matrix:
   fast_finish: true
   include:
