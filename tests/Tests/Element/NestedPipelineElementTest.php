@@ -9,8 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Alchemy\Pipeline\Tests\Pipeline\Element;
+namespace Alchemy\Pipeline\Tests\Element;
 
+use Alchemy\Pipeline\Element\NestedPipelineElement;
 use Alchemy\Pipeline\Pipeline;
 use Alchemy\Resource\Resource;
 
@@ -25,7 +26,7 @@ class NestedPipelineElementTest extends \PHPUnit_Framework_TestCase
 
         $pipeline->process($resource->reveal())->willReturn($expected->reveal());
 
-        $element = new Pipeline\Element\NestedPipelineElement($pipeline->reveal());
+        $element = new NestedPipelineElement($pipeline->reveal());
 
         $this->assertSame($expected->reveal(), $element->execute($resource->reveal()));
     }

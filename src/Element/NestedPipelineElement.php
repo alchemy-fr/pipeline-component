@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Alchemy\Pipeline\Pipeline\Element;
+namespace Alchemy\Pipeline\Element;
 
 use Alchemy\Pipeline\Pipeline;
 use Alchemy\Pipeline\PipelineElement;
