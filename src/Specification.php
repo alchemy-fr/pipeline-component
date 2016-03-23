@@ -20,22 +20,4 @@ interface Specification
      * @return bool
      */
     public function isSatisfiedBy(Resource $resource);
-
-    /**
-     * @param Specification $specification
-     * @return Specification
-     */
-    public function andSpecification(Specification $specification);
-
-    /**
-     * @param Specification $specification
-     * @return Specification
-     */
-    public function orSpecification(Specification $specification);
-
-    /**
-     * @param Specification $specification
-     * @return Specification
-     */
-    public function notSpecification(Specification $specification);
 }
